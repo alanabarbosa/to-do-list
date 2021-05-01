@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto - Lista de tarefas</title>
+    
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/lista.css" rel="stylesheet">
+    
+</head>
+<body>
+ <div class="container">
+    	<div class="row">
+    		<div class="col-md-8 offset-md-2 title">
+    			<h1 class="text-info">Lista de tarefas</h1>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="input-group col-md-8 offset-md-2 cx">
+			  <input type="text" class="form-control" placeholder="Adicionar uma tarefa" aria-label="Adicionar uma tarefa" aria-describedby="button-task">
+			  <div class="input-group-append">
+			    <button class="btn btn-outline-info btn-addTask" type="button" id="button-task">Adicionar </button>
+			  </div>
+			</div>
+    	</div>
+    	
+        <div class="row mt-5 lista">
+    		<div class="col-md-8 offset-md-2">
+		    	<div class="list-group todo-list">				
+				 
+				</div>
+    		</div>
+		</div>
+	</div>
+
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+<script src="js/lista.js"></script>  
+    
+</body>
+</html>
