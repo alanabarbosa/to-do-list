@@ -1,5 +1,5 @@
 'use strict';
-
+const boxClose = document.querySelector('.close')
 const getBanco = () => JSON.parse(localStorage.getItem('todoList')) ?? [];
 const setBanco = (banco) => localStorage.setItem('todoList', JSON.stringify(banco))
 
@@ -23,7 +23,7 @@ const limparTarefa = () => {
 const atualizarTela = () => {  
     limparTarefa();
     const banco = getBanco();
-    banco.forEach((item, indice) => criarItem(item.tarefa, item.status, indice));
+    banco.forEach((item, indice) => criarItem(item.tarefa, item.status, indice));    
 }
 
 const inserirItem = (evento) => {
@@ -34,6 +34,7 @@ const inserirItem = (evento) => {
         banco.push({ 'tarefa': texto, 'status': '' })  
         setBanco(banco);
         atualizarTela();
+        document.querySelector('.todo__item').classList.add('add')
         evento.target.value = '';
     }
 }
@@ -42,7 +43,8 @@ const removerItem = (indice) => {
     const banco = getBanco();
     banco.splice(indice, 1);
     setBanco(banco);
-    atualizarTela();   
+    atualizarTela();  
+    
 }
 
 const atualizarItem = (indice) => {
