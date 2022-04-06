@@ -18,7 +18,7 @@ html {
 
 body {
     background-color: var(--grey-color);
-    background-image: url('img/bg.jpg');
+    background-image: url('../img/bg.jpg');
     background-size: cover;
     font: bold 2rem 'Nunito Sans', sans-serif;
 }
